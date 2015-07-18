@@ -1,0 +1,19 @@
+{% extends "banga/base.html" %}
+
+{% block content %}
+
+<div class="container">
+	{% for pizza in pizzas %}
+		<div class="col-xs-12 col-md-4 pizza-col">
+			<h2 class="{% cycle 'raphael' 'michael' 'leonardo' 'donatello' %}">{{ pizza.name }}</h2>
+			<button class="btn btn-xs btn-primary pull-right">Order Now!</button>
+			<img src="{{ pizza.get_first_image }}">
+			<p><small class="toppings {% cycle 'raphael' 'michael' 'leonardo' 'donatello' %}">{{ pizza.get_toppings }}</small></p>
+			<p>{{ pizza.description }}</p>
+		</div>
+	{% endfor %}
+
+</div>
+
+
+{% endblock content %}

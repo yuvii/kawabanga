@@ -1,0 +1,159 @@
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+body {
+  font-family: 'Noto Sans Hebrew', 'Open Sans Hebrew', arial, sans-serif;
+  background: url(/static/banga/css/pizza.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#wrapper {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#header {
+  width: 100%;
+  background-color: #4c9c23;
+  border-bottom: 4px solid #38721a;
+}
+#content {
+  flex: 1;
+}
+#content > .container {
+  margin-bottom: 36px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#header h1 {
+  color: #ee7e1b;
+  font-weight: bold;
+  text-shadow: 2px 2px 0px #c7650f;
+}
+#header li {
+  float: left;
+  display: inline-block;
+  padding: 15px;
+  margin: 15px;
+}
+#header .turt {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 2px solid;
+}
+#header .turt.leo {
+  background-color: #00aae6;
+  border-color: #00394d;
+}
+#header .turt.leo:after {
+  background-color: #00394d;
+}
+#header .turt.micha {
+  background-color: #ea9500;
+  border-color: #513400;
+}
+#header .turt.micha:after {
+  background-color: #513400;
+}
+#header .turt.rapha {
+  background-color: #e3331c;
+  border-color: #5b140b;
+}
+#header .turt.rapha:after {
+  background-color: #5b140b;
+}
+#header .turt.dona {
+  background-color: #995aa0;
+  border-color: #3b233e;
+}
+#header .turt.dona:after {
+  background-color: #3b233e;
+}
+#header .turt:after {
+  content: " ";
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+#footer {
+  display: none;
+  height: 25px;
+  color: #444444;
+  margin: 20px 0 10px;
+}
+input.form-control,
+textarea.form-control {
+  border-radius: 0;
+  box-shadow: none;
+}
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #85bbdd;
+  box-shadow: none;
+}
+textarea {
+  resize: none;
+}
+.no-margin {
+  margin: 0;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.indie {
+  font-family: 'Indie Flower', sans-serif;
+}
+.pizza-col {
+  height: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.pizza-col img {
+  width: 100%;
+  height: 150px;
+}
+.pizza-col h2 {
+  font-family: 'Indie Flower', sans-serif;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.pizza-col button {
+  position: absolute;
+  right: 25px;
+  top: 27px;
+}
+.pizza-col .toppings {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Indie Flower', sans-serif;
+}
+.raphael {
+  color: #e3331c;
+}
+.michael {
+  color: #ea9500;
+}
+.leonardo {
+  color: #00aae6;
+}
+.donatello {
+  color: #995aa0;
+}

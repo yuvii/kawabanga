@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza Kawabanga</title>
+
+	{% include "banga/resources.html" %}
+</head>
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+		<nav>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		    </button>
+		    <ul>
+				<li>
+					<h1 class="no-margin">Pizza Kawabanga!</h1>
+				</li>
+
+				<li>
+					<span class="turt leo"></span>
+				</li>
+				<li>
+					<span class="turt micha"></span>
+				</li>
+				<li>
+					<span class="turt rapha"></span>
+				</li>
+				<li>
+					<span class="turt dona"></span>
+				</li>
+		    </ul>
+
+		</nav>
+	</div>
+
+	<div id="content">
+		{% block content %}
+		{% endblock content %}
+	</div>
+
+	<div id="footer">
+		<div class="col-xs-12">
+			<span>
+				All rights reserved <b>|</b> 
+				<a href="#">terms and conditions</a> <b>|</b>
+			    555-1234-fake-number <b>|</b>
+			    555-333222 / 555-133244 <b>|</b>
+			    <a href="mailto:info@0kawabanga.com">Contact Us!</a>
+			</span>
+		</div>
+	</div>
+
+</div>
+{% include "banga/scripts.html" %}
+</body>
+</html>
